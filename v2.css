@@ -31,3 +31,12 @@ body{background:var(--page);color:var(--heading);transition:background .25s ease
 
 /* The privacy statement must remain readable against the deep navy field. */
 .privacy h2{color:#f7fffe!important}.privacy h2 em{color:#42cfbd!important}.privacy-copy{color:#d6e3e8!important}.privacy-copy li{color:#f7fffe!important}.privacy-copy .text-link{color:#63e0d0!important}.privacy .eyebrow{color:#63e0d0!important}
+
+/* Real app screenshots — light/dark swap, mirrors the brand-mark swap. */
+.budget-shots{margin-top:56px;display:flex;justify-content:center}
+.shot-frame{max-width:400px;border-radius:20px;overflow:hidden;border:1px solid var(--rule);background:var(--card);box-shadow:0 18px 55px rgba(6,53,96,.12)}
+.shot{display:block;width:100%;height:auto}
+.shot-dark{display:none!important}
+[data-theme="dark"] .shot-light{display:none!important}
+[data-theme="dark"] .shot-dark{display:block!important}
+@media(max-width:800px){.shot-frame{max-width:320px}}
